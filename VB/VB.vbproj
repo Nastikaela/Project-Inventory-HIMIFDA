@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FA52E2F-D84C-4A42-83E0-503030F53092}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.awal</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>VB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\VB\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0B3956BB5AD9E3718DF6CD63F2490AD2B52A75FD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>VB_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="awal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="awal.Designer.vb">
+      <DependentUpon>awal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="databalik.Designer.vb">
+      <DependentUpon>databalik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databalik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edituang.Designer.vb">
+      <DependentUpon>edituang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edituang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan.Designer.vb">
+      <DependentUpon>laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb" />
+    <Compile Include="tambahbalik.Designer.vb">
+      <DependentUpon>tambahbalik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambahbalik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tambahdata.Designer.vb">
+      <DependentUpon>tambahdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambahdata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tambahpinjam.Designer.vb">
+      <DependentUpon>tambahpinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambahpinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editpinjam.Designer.vb">
+      <DependentUpon>editpinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editpinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datainven.Designer.vb">
+      <DependentUpon>datainven.vb</DependentUpon>
+    </Compile>
+    <Compile Include="datainven.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editdata.Designer.vb">
+      <DependentUpon>editdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editdata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menus.Designer.vb">
+      <DependentUpon>menus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datauang.Designer.vb">
+      <DependentUpon>datauang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="datauang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tambahuang.Designer.vb">
+      <DependentUpon>tambahuang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tambahuang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datapinjam.Designer.vb">
+      <DependentUpon>datapinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="datapinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="awal.resx">
+      <DependentUpon>awal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databalik.resx">
+      <DependentUpon>databalik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edituang.resx">
+      <DependentUpon>edituang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan.resx">
+      <DependentUpon>laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahbalik.resx">
+      <DependentUpon>tambahbalik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahdata.resx">
+      <DependentUpon>tambahdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahpinjam.resx">
+      <DependentUpon>tambahpinjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editpinjam.resx">
+      <DependentUpon>editpinjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datainven.resx">
+      <DependentUpon>datainven.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editdata.resx">
+      <DependentUpon>editdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menus.resx">
+      <DependentUpon>menus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datauang.resx">
+      <DependentUpon>datauang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahuang.resx">
+      <DependentUpon>tambahuang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datapinjam.resx">
+      <DependentUpon>datapinjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="VB_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contoh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nnnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nmjk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nnnnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
